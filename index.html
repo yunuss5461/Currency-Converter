@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Döviz Kuru Çevirici</h1>
+      <div class="converter-box">
+        <input
+          type="number"
+          id="amount"
+          placeholder="Miktar"
+          class="input-field"
+        />
+        <select id="from-currency" class="currency-select"></select>
+        <select id="to-currency" class="currency-select"></select>
+        <button id="convert-button" class="convert-button">Çevir</button>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

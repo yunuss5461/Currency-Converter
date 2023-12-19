@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6e9f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  max-width: 360px;
+  width: 100%;
+}
+
+h1 {
+  color: #1a202c;
+  margin-bottom: 2em;
+  font-weight: 600;
+}
+
+.converter-box {
+  display: grid;
+  gap: 20px;
+}
+
+.input-field, .currency-select {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #1a202c;
+  background-color: #f8faff;
+}
+
+.convert-button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.convert-button:hover {
+  background-color: #3a52db;
+  box-shadow: 0 8px 15px rgba(74, 108, 247, 0.4);
+}
+
+#result {
+  font-size: 22px;
+  color: #2ecc71;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .input-field, .currency-select, .convert-button {
+    font-size: 14px;
+  }
+
+  #result {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .input-field, .currency-select {
+    padding: 12px;
+  }
+
+  .convert-button {
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 18px;
+  }
+}
